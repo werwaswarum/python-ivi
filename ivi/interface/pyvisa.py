@@ -29,10 +29,10 @@ import sys
 from distutils.version import StrictVersion
 
 try:
-    import visa
+    import pyvisa as visa
     try:
         # New style PyVISA
-        visa_rm = visa.ResourceManager()
+        visa_rm = visa.ResourceManager('@py')
         visa_instrument_opener = visa_rm.open_resource
     except AttributeError:
         # Old style PyVISA
