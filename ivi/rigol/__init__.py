@@ -36,3 +36,7 @@ from .rigolDP1308A import rigolDP1308A
 # Digital Multimeters
 #DM3068
 from .rigolDM3068Agilent import rigolDM3068Agilent
+
+#Signal Genrator
+
+from .rigolDG1022Z import rigolDG1022Z
